@@ -1,0 +1,44 @@
+.content {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: orange;
+    padding: 20px;
+    width: 100%;
+    color: #8B4513;
+    font-size: large;
+}
+
+#display{
+    width: 100%;
+}
+
+#slider {
+    width: 100%;
+}
+
+#length{
+    display: inline-block;
+    width: 100px;
+}
+
+.previous_passwords {
+    margin-bottom: 20px;
+}
+
+.navbar-custom {
+    background-color: #8B4513;
+}
+
+a {
+    color: orange;
+}
+
+button {
+    background-color: #8B4513;
+    color: orange
+}
+
+
+
+
+
