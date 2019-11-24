@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Random Password Generator</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    
+</head>
+<body>
+
+    <nav class="navbar navbar-custom">
+        <a class="navbar-brand" href="#">Bobby's Password Generator</a>
+    </nav>
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-lg-8 col-sm-12 mx-auto">
+
+                <div class="content">
+                    <h4>Random Password Generator</h4>
+                    <br />
+                    <input type="text" id="display">
+                    <br />
+                    <input type="range" min="8" max="128" name="slider" id="slider">
+                    <br />
+                    <button onclick="generate()">Generate</button>
+                    <button onclick="copyPassword()">Copy to Clipboard</button>
+                    <div id="length"></div>
+                    <div class="setting">
+                        <label for= "uppercase">Include Uppercase Letters</label>
+                        <input type= "checkbox" id="uppercase" checked />
+                    </div>
+                    <div class="setting">
+                            <label for= "Lowercase">Include Lowercase Letters</label>
+                            <input type= "checkbox" id="lowercase" checked />
+                    </div>
+                    <div class="setting">
+                            <label for= "numbers">Include Numbers</label>
+                            <input type= "checkbox" id="numbers" checked />
+                    </div>
+                    <div class="setting">
+                            <label for= "symbols">Include symbols</label>
+                            <input type= "checkbox" id="symbols" checked />
+                    </div>
+                    <div class="previous_passwords">
+                        <b>Previously Generated Passwords:</b>
+                        <br />
+                        <div id="lastpasswords"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
